@@ -4,7 +4,7 @@ import Order from "../models/order.model.js";
 
 const getAnalytics = asyncHandler(async (req, res) => {
   const [revenueResult, topProducts, ordersByStatus] = await Promise.all([
-    // Total revenue (excluding cancelled orders)
+    // Total revenue -> cancel orders hatake
     Order.aggregate([
       { $match: { status: { $ne: "CANCELLED" } } },
       { $group: { _id: null, totalRevenue: { $sum: "$totalAmount" } } },
