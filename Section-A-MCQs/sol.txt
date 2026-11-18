@@ -1,0 +1,15 @@
+1. Q1. Which loop executes at least once, even if the condition is false?
+Ans -> do... while
+
+Q2. Which hook is used for performance optimization by memoizing value?
+Ans : useMemo
+
+Q3. Node.js uses which programming model?
+Ans : single-threaded with event loop
+
+Q4. Which part of JWT contains user data?
+Ans : Payload
+
+
+Q5. The $lookup stage in MongoDB aggregation is used for:
+Ans : Joining documents from another collection
